@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { AuthPageComponent } from '../../auth-page/auth-page.component';
+import { AuthPageComponent } from '../../Auth/Page/auth-page.component';
 import { RouterLink } from '@angular/router';
 @Component({
   selector: 'app-navigation-bar',
