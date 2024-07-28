@@ -32,7 +32,6 @@ export class AuthPageComponent {
     const user:User = {
         email : this.AuthForm.value.email || null,
         password : this.AuthForm.value.password || null,
-        picture : null,
         username:this.AuthForm.value.username || null
     }
     return user
