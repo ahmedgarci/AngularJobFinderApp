@@ -19,7 +19,8 @@ export class NavigationBarComponent {
   constructor(private UserAuth:UserAuthencticationService){}
 
   user:User|null = this.UserAuth.userInfo.value;
-
+  isLoggedIn:boolean|null = this.UserAuth.isLoggedIn.value;
+  
   readonly dialog = inject(MatDialog)
   OpenDialog(){
     this.dialog.open(AuthPageComponent)

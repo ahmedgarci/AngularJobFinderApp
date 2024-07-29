@@ -6,12 +6,12 @@
           <a routerLink="jobs" class=" text-lg ">Jobs</a>
           <a href="#" class="">About Us</a>
           <a href="#" class="">Contact</a>
-          <a routerLink="user/profile" class=" text-lg ">Profile</a>
         </div>
-      <div *ngIf=" !user ; else showLoggedUser">
+      <div *ngIf=" !isLoggedIn ; else showLoggedUser">
           <button (click)="OpenDialog()" class="bg-black text-white px-4 py-2 rounded-md">Log in</button>
       </div>
-      <ng-template #showLoggedUser>{{ user?.username}}</ng-template>
+      <ng-template #showLoggedUser><a routerLink="user/profile" class=" text-lg ">Profile</a>
+      </ng-template>
     </div>
 
 </nav>
